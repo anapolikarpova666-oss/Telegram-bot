@@ -1,41 +1,46 @@
-<h2>Телеграм бот, который генерирует номера банковских карт</h2>
+<h2>Telegram Bot That Generates Bank Card Numbers</h2>
 
-> **Статус проекта:**
->
-> 🟢 Поддерживается (активный) 
+Project Status:
+🟢 Maintained (Active)
 
-## Цели и Задачи
-Помочь QA инженеру быстро получить нужный номер карты при тестировании в тестовой среде.
+Goals and Objectives
 
-Бот геренирует номера тестовых банковских карт:
-* Номера карт проходят проверку на алгоритм Луна
-* Можно получить номер карты: Visa, Maestro, Mastercard, JCB
+Help QA engineers quickly obtain bank card numbers for testing in a test environment.
 
-## 🖼 Скриншоты
+The bot generates test bank card numbers:
 
-Стартовое меню:
+Card numbers pass Luhn algorithm validation
+
+Supported card types: Visa, Maestro, Mastercard, JCB
+
+🖼 Screenshots
+
+Start menu:
 
 ![image](https://raw.githubusercontent.com/German-D/tg_credit_cards/main/static/bot_menu.png)
 
-После выбора карты Visa:
+after choosing Visa:
 
 ![image](https://raw.githubusercontent.com/German-D/tg_credit_cards/main/static/visa_card.png)
 
 
-## 💻 Технологии
+💻 Technologies
 
-* Python
-* Библиотека `telebot`
-* Библиотека `faker`
+Python
 
-## ⏬ Установка на локальном компьютере
+telebot library
 
-1. Скачать проект
+faker library
+
+⏬ Local Installation
+
+Download the project
    
-2. Создать бота и через [@BotFather](https://t.me/BotFather) и вставить в проекте свой токен от бота
+2.Create bot [@BotFather](https://t.me/BotFather) and insert your bot token into the project
 
-3. Создаём виртуальное окружение внутри папки проекта.
-Далее команды для MacOS (для windows инуструкция [есть вот тут](https://realpython.com/python-virtual-environments-a-primer/#create-it))
+
+3. Create a virtual environment inside the project folder.
+Below are commands for macOS (Windows instructions are available here). [есть вот тут](https://realpython.com/python-virtual-environments-a-primer/#create-it))
 
 ``` markdown
 python3 -m venv venv
@@ -44,7 +49,7 @@ python3 -m venv venv
 ``` markdown
 source venv/bin/activate
 ```
-4. Устанавливаем библиотеки
+4.install library 
 
 ``` markdown
 python3 -m pip install pyTelegramBotAPI
@@ -54,11 +59,11 @@ python3 -m pip install pyTelegramBotAPI
 python3 -m pip install faker
 ```
 
-5. Запускаем
+5. start
 ``` markdown
 python3 card_bot.py
 ```
 
-## Автор
+## Author
 
-Герман Дольников ([@dolnikov](https://t.me/dolnikov))
+Anastasiia Polikarpova
